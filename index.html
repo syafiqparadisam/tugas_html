@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Form Registrasi</title>
+	<link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+	<h1 class="title">Formulir Pendaftaran Siswa Baru</h1>
+
+	<form action="proses.php" method="POST" enctype="multipart/form-data" class="form">
+		<label for="nama">Nama Lengkap:</label><br>
+		<input type="text" id="nama" name="nama" class="input" required><br><br>
+
+		<label for="email">Email:</label><br>
+		<input type="email" id="email" name="email" class="input" required><br><br>
+
+		<label for="kelas">Kelas:</label><br>
+		<input type="text" id="kelas" name="kelas" class="input" required><br><br>
+
+		<label for="email">Jurusan:</label><br>
+		<input type="text" id="jurusan" name="jurusan" class="input" required><br><br>
+
+		<label>Ekskul:</label>
+		<div class="flex-checkbox">
+			<div class="flex">
+				<input type="checkbox" name="club TKJ" />
+				<p>club TKJ</p>
+			</div>
+			<div class="flex">
+				<input type="checkbox" name="club RPL" />
+				<p>club RPL</p>
+			</div>
+			<div class="flex">
+				<input type="checkbox" name="banjari" />
+				<p>banjari</p>
+			</div>
+			<div class="flex">
+				<input type="checkbox" name="band" />
+				<p>band</p>
+			</div>
+		</div>
+
+		<div class="flex-upload">
+			<label for="foto">Upload Foto Siswa:</label><br>
+			<input type="file" class="upload-input" required name="foto" accept="image/*"><br><br>
+		</div>
+
+		<label for="alamat">Deskripsi minat dan bakat :</label><br>
+		<textarea name="alamat" id="alamat" rows="4" required cols="40" required></textarea><br><br>
+
+		<input type="submit" value="Kirim">
+	</form>
+
+</body>
+
+</html>
